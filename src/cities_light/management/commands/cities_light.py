@@ -313,8 +313,6 @@ It is possible to force the import of files which weren't downloaded using the
             country = Country(geoname_id=items[ICountry.geonameid])
             force_insert = True
 
-        self.logger.info(">>>>>>>>>>>>>>.")
-        self.logger.info(f">>>>>>>>>>>>>>. {ICountry.codeNum}")
         country.name = items[ICountry.name]
         country.code = items[ICountry.codeNum]
         country.code2 = items[ICountry.code2]

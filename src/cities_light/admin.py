@@ -17,6 +17,7 @@ class CountryAdmin(admin.ModelAdmin):
 
     list_display = (
         'name',
+        'code',
         'code2',
         'code3',
         'continent',
@@ -27,6 +28,7 @@ class CountryAdmin(admin.ModelAdmin):
     search_fields = (
         'name',
         'name_ascii',
+        'code',
         'code2',
         'code3',
         'tld',
