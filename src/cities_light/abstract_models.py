@@ -106,6 +106,7 @@ class AbstractCountry(Base):
     Base Country model.
     """
 
+    code = models.CharField(max_length=2, null=True, blank=True, unique=True)
     code2 = models.CharField(max_length=2, null=True, blank=True, unique=True)
     code3 = models.CharField(max_length=3, null=True, blank=True, unique=True)
     continent = models.CharField(max_length=2, db_index=True,
